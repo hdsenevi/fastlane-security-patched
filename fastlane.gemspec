@@ -23,7 +23,7 @@ config['Gemspec/DevelopmentDependencies'] = {
 File.write("#{lib}/fastlane/plugins/template/.rubocop.yml", YAML.dump(config))
 
 Gem::Specification.new do |spec|
-  spec.name          = "fastlane"
+  spec.name          = "fastlane-security-patched"
   spec.version       = Fastlane::VERSION
   # list of authors is regenerated and resorted on each release
   spec.authors       = ["Fumiya Nakamura",
@@ -51,9 +51,10 @@ Gem::Specification.new do |spec|
                         "Jérôme Lacoste",
                         "Joshua Liebowitz",
                         "Łukasz Grabowski",
-                        "Iulian Onofrei"]
+                        "Iulian Onofrei",
+                        "Sha Senevirathne"]
 
-  spec.email         = ["fastlane@krausefx.com"]
+  spec.email         = ["fastlane@krausefx.com", "shanaka36@gmail.com"]
   spec.summary       = Fastlane::DESCRIPTION
   spec.description   = Fastlane::DESCRIPTION
   spec.homepage      = "https://fastlane.tools"
